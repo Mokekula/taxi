@@ -15,16 +15,14 @@ const App = () => {
     registration: <Registration setPage={setPage} />,
   };
 
-  if (page === "registration" || page === "login") {
-    return <>{pages[page]}</>;
-  } else {
-    return (
-      <>
-        <Header setPage={setPage} />
-        {pages[page]}
-      </>
-    );
-  }
+  const isPublicRoute = page === "registration" || page === "login";
+
+  return (
+    <>
+      {!isPublicRoute && <Header setPage={setPage} />}
+      {pages[page]}
+    </>
+  );
 };
 
 export default App;
