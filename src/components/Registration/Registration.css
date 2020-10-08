@@ -1,0 +1,108 @@
+.Registration {
+  padding: 65px 60px 65px 52px;
+  background-color: #ffffff;
+  max-width: 391px;
+  max-height: 436px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  border-radius: 4px;
+}
+
+.Registration__title {
+  font-size: 36px;
+  line-height: 38px;
+  color: #323232;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.Registration__login-text {
+  font-size: 16px;
+  color: #505050;
+}
+
+.Registration__login-btn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #1473e6;
+  padding: 0;
+  margin-bottom: 31px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Registration__login-btn:hover {
+  color: #ffc617;
+}
+
+.Registration__label {
+  font-size: 15px;
+  color: #747474;
+  display: inline-block;
+}
+
+.Registration__mail,
+.Registration__name,
+.Registration__surname,
+.Registration__pass {
+  outline: none;
+  border: none;
+  height: 32px;
+  border-bottom: solid 1px #eaeaea;
+  margin-bottom: 29px;
+  font-size: 16px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.Registration__pass,
+.Registration__mail {
+  max-width: 387px;
+  width: 100%;
+}
+
+.Registration__name-wrap,
+.Registration__surname-wrap {
+  display: inline-block;
+}
+
+.Registration__name {
+  margin-right: 15px;
+}
+
+.Registration__name,
+.Registration__surname {
+  max-width: 182px;
+  width: 100%;
+}
+
+.Registration__mail:focus,
+.Registration__name:focus,
+.Registration__surname:focus,
+.Registration__pass:focus {
+  border-bottom: solid 2px #1473e6;
+}
+
+.Registration__register-btn {
+  height: 50px;
+  max-width: 248px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ffc617;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 21px;
+  color: #000000;
+  float: right;
+  padding: 0;
+  transition: all 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+
+.Registration__register-btn:hover {
+  color: #1473e6;
+}
