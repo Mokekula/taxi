@@ -1,5 +1,5 @@
 import React from "react";
-import "../Registration/Registration.css";
+import "./Registration.css";
 
 function Registration(props) {
   return (

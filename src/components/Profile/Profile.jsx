@@ -1,7 +1,7 @@
 import React from "react";
-import "../Profile/Profile.css";
+import "./Profile.css";
 
-function Profile() {
+function Profile(props) {
   return <div className="Container">Profile</div>;
 }
 

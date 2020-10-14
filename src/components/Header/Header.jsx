@@ -1,8 +1,11 @@
-import React from "react";
-import "../Header/Header.css";
+import React, {useContext} from "react";
+import "./Header.css";
 import logo from "../../img/logo.png";
+import {Context} from '../../context'
 
 function Header(props) {
+  const {logout} = useContext(Context);
+
   return (
     <header className="Header">
       <img src={logo} alt="logo" className="Logo" />
@@ -19,7 +22,7 @@ function Header(props) {
               Профиль
             </a>
           </li>
-          <li className="Exit" onClick={() => props.setPage("login")}>
+          <li className="Exit" onClick={() => logout()}>
             <a href="#" className="Exit__btn">
               Выйти
             </a>
