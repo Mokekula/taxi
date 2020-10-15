@@ -1,12 +1,22 @@
-import React, {useContext, PropTypes} from "react";
+import PropTypes from "prop-types";
+import React, {useContext} from "react";
 import "./Login.css";
 import {Context} from '../../context'
+import { useState } from "react";
 
 function Login(props) {
   const {login} = useContext(Context);
 
-  const userEmailInput = React.createRef();
-  const userPassInput = React.createRef();
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = () => {
+    if (name && password){
+      login()
+    } else{
+      alert('meow')
+    }
+  }
 
   return (
       <div className="Container">
@@ -23,29 +33,32 @@ function Login(props) {
           </button>
         </div>
 
-        <form className="Login__form">
+        <form className="Login__form" onSubmit={()=>handleSubmit()}>
           <div className="Login__username-wrap">
             <label htmlFor="Login-name" className="Login__label">
               Имя пользователя*
             </label>
-            <input type="text" className="Login__username" id="Login-name" ref={userEmailInput}/>
+            <input type="text" className="Login__username" id="Login-name" onChange={(e)=> setName(e.target.value)}/>
           </div>
 
           <div className="Login__pass-wrap">
             <label htmlFor="Login-pass" className="Login__label">
               Пароль*
             </label>
-            <input type="text" className="Login__pass" id="Login-pass" ref={userPassInput}/>
+            <input type="password" className="Login__pass" id="Login-pass" onChange={(e)=> setPassword(e.target.value)}/>
           </div>
-        </form>
 
-        <button className="Login__entry-btn" onClick={() => login(userEmailInput.current.value, userPassInput.current.value)}>
-          Войти
-        </button>
+          <button className="Login__entry-btn" type='submit'>
+            Войти
+          </button>
+        </form>
       </div>
     </div>
   );
 }
 
+Login.propTypes = {
+  setPage: PropTypes.func.isRequired,
+}
+
 export default Login;
-// props.setPage(login)

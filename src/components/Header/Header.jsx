@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, {useContext} from "react";
 import "./Header.css";
 import logo from "../../img/logo.png";
@@ -31,6 +32,10 @@ function Header(props) {
       </nav>
     </header>
   );
+}
+
+Header.propTypes = {
+  setPage: PropTypes.func.isRequired,
 }
 
 export default Header;

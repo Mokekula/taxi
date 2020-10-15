@@ -18,11 +18,9 @@ const App = () => {
     registration: <Registration setPage={setPage} />,
   };
 
-  const login = (email, password) => {
-    if ((email && password).length > 0) {
-      logged(true);
-      setPage("map");
-    }
+  const login = (name, password) => {
+    logged(true);
+    setPage("map");
   };
 
   const logout = () => {

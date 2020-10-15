@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React from "react";
 import "./Registration.css";
 
@@ -62,6 +63,10 @@ function Registration(props) {
       </div>
     </div>
   );
+}
+
+Registration.propTypes = {
+  setPage: PropTypes.func.isRequired,
 }
 
 export default Registration;
