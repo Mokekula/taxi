@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import "./Header.css";
 import logo from "../../img/logo.png";
-import {Context} from '../../context'
+import { Context } from "../../context";
 
-function Header(props) {
-  const {logout} = useContext(Context);
+const Header = (props) => {
+  const { logout } = useContext(Context);
 
   return (
     <header className="Header">
@@ -14,28 +14,28 @@ function Header(props) {
       <nav className="Menu">
         <ul className="Menu__inner">
           <li className="Map" onClick={() => props.setPage("map")}>
-            <a href="#" className="Map__btn">
+            <button href="#" className="Map__btn">
               Карта
-            </a>
+            </button>
           </li>
           <li className="Profile" onClick={() => props.setPage("profile")}>
-            <a href="#" className="Profile__btn">
+            <button href="#" className="Profile__btn">
               Профиль
-            </a>
+            </button>
           </li>
           <li className="Exit" onClick={() => logout()}>
-            <a href="#" className="Exit__btn">
+            <button href="#" className="Exit__btn">
               Выйти
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 Header.propTypes = {
   setPage: PropTypes.func.isRequired,
-}
+};
 
 export default Header;

@@ -3,9 +3,8 @@ import Header from "./components/Header/Header";
 import Map from "./components/Map/Map";
 import Profile from "./components/Profile/Profile";
 import Login from "./components/Login/Login";
-import Registration from "./components/Registration/Registration";
+import { Registration } from "./components/Registration/Registration";
 import { Context } from "./context";
-import PropTypes from "prop-types";
 
 const App = () => {
   const [page, setPage] = React.useState("login");
