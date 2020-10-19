@@ -31,6 +31,7 @@
   color: #1473e6;
   padding: 0;
   margin-bottom: 31px;
+  margin-left: 5px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -101,6 +102,9 @@
   padding: 0;
   transition: all 0.3s;
   font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Registration__register-btn:hover {

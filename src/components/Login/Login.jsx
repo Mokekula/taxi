@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 import { Context } from "../../context";
 import { useState } from "react";
 
-const Login = (props) => {
+export const Login = (props) => {
   const { login } = useContext(Context);
 
   const [name, setName] = useState("");
@@ -25,12 +26,9 @@ const Login = (props) => {
 
         <div className="Login__registr">
           <span className="Login__registr-text">Новый пользователь?</span>
-          <button
-            className="Login__registr-btn"
-            onClick={() => props.setPage("registration")}
-          >
+          <Link to="/registration" className="Login__registr-btn">
             Зарегистрируйтесь
-          </button>
+          </Link>
         </div>
 
         <form className="Login__form" onSubmit={() => handleSubmit()}>
@@ -60,9 +58,10 @@ const Login = (props) => {
             />
           </div>
 
-          <button className="Login__entry-btn" type="submit">
+          {/* <button className="Login__entry-btn" type="submit"></button> */}
+          <Link to="/map" className="Login__entry-btn">
             Войти
-          </button>
+          </Link>
         </form>
       </div>
     </div>
@@ -73,4 +72,4 @@ Login.propTypes = {
   setPage: PropTypes.func,
 };
 
-export default Login;
+// export default Login;

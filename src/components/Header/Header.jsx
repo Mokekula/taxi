@@ -1,10 +1,11 @@
-import PropTypes from "prop-types";
 import React, { useContext } from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../img/logo.png";
 import { Context } from "../../context";
 
-const Header = (props) => {
+export const Header = (props) => {
   const { logout } = useContext(Context);
 
   return (
@@ -13,20 +14,20 @@ const Header = (props) => {
 
       <nav className="Menu">
         <ul className="Menu__inner">
-          <li className="Map" onClick={() => props.setPage("map")}>
-            <button href="#" className="Map__btn">
+          <li className="Map">
+            <Link to="/map" className="Map__btn">
               Карта
-            </button>
+            </Link>
           </li>
-          <li className="Profile" onClick={() => props.setPage("profile")}>
-            <button href="#" className="Profile__btn">
+          <li className="Profile">
+            <Link to="/profile" className="Profile__btn">
               Профиль
-            </button>
+            </Link>
           </li>
-          <li className="Exit" onClick={() => logout()}>
-            <button href="#" className="Exit__btn">
+          <li className="Exit">
+            <Link to="/login" className="Exit__btn">
               Выйти
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -38,4 +39,4 @@ Header.propTypes = {
   setPage: PropTypes.func.isRequired,
 };
 
-export default Header;
+// export default Header;

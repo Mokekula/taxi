@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Registration.css";
 
 export const Registration = (props) => {
@@ -10,12 +11,9 @@ export const Registration = (props) => {
 
         <div className="Registration__login">
           <span className="Registration__login-text">Уже зарегистрирован?</span>
-          <button
-            className="Registration__login-btn"
-            onClick={() => props.setPage("login")}
-          >
+          <Link to="/login" className="Registration__login-btn">
             Войти
-          </button>
+          </Link>
         </div>
 
         <form className="Registration__form">
@@ -70,12 +68,10 @@ export const Registration = (props) => {
           </div>
         </form>
 
-        <button
-          className="Registration__register-btn"
-          onClick={() => props.setPage()}
-        >
-          Зарегистрироваться
-        </button>
+        {/* <button className="Registration__register-btn"></button> */}
+        <Link to="/map" className="Registration__register-btn">
+          Регистрация
+        </Link>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "./Header";
 import { render, fireEvent } from "@testing-library/react";
+import { Header } from "./Header";
 import { Registration } from "../Registration/Registration";
 
 jest.mock("../../Profile/Profile", () => {
