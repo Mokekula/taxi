@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 36" width="55" height="36">
+	<defs>
+		<image width="55" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAkCAMAAAAaR1JBAAAAAXNSR0IB2cksfwAAAPNQTFRF/////u/x+KCq9YCN9HB/95Cc+sDH/vPi/efH+8+N/eG4+r/G8UBU7AAb8lBi/d/i/efG+ao4+J4b+KQp+8Jx81hk/Myk+rFL+8l/+8/U7RAp8yMR/2MC+ZMW+rZU//nx/18A+ZcY7y9F7gwY/lkC/W8H+8h+9X+N+kcH+4IP7xIW/mcD+rxi+a+39zUM+ooT819w/HoM/Nqp8T9T+86N7Q8o7g4c/msF8BYd+8Jw8k9i/XMI+J+p+DsK+4YR8h0T+JsZ+rZT+00F8RgU+JoZ/u3U9CoP+ZIW+bBF8yQR8TVD/LOF+aUv7h83+KQo9G9+/NSbb6QKhAAAASpJREFUeJzt1Mdag0AUBWAwalTEIFY0yiRGsSQWwBbRiCn28v5P4wSGfBzmEjYuXOTs7uL/LpxhUJRJ/nHUqdJ0aWZWFWN5bp5noUhpi7rIUoWPxrIZZ2W1PG7XSA2ztr5hprKZy6ytNNO3qztpZ+7aNKtkGGPVGkLa1YHtNRhj++DMA4o5wPRDNswRQqIcFZ/yOGLsBF1Tdi1cdxo7doZQruYcXUO4C3Su5Dx0gmWb8SV3CewqcddFjaK7SVymmNs/e8427e6KegnQ3Qv3UHQOKr5gR7hHYKHEpO/siTo+g3CZhd2ozR6wZp9wioVwwO/RM7AXWyGvYAvhq8xyYsEVfHv/gCPPZTzBZ6I8jY/u16hJqhLY6Xx7bSfQ4sk2fvww9N1xf7NJovwC6pJEQEU0iuAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Мастер карт" href="#img1" x="0" y="0" />
+</svg>

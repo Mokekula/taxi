@@ -2,14 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-// import ThemeContext from "./components/ThemeContext/themeContext";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { Provider } from "react-redux";
+import { store } from "./modules/store";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 

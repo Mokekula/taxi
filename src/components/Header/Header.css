@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
+.Exit__btn {
+  height: 40px;
+}
+
 .Profile__btn,
 .Exit__btn {
   margin-left: 15px;
@@ -42,4 +46,5 @@
 .Profile__btn:hover,
 .Exit__btn:hover {
   background-color: #f2f2f2;
+  color: #ffc617;
 }
