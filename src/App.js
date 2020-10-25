@@ -21,6 +21,7 @@ export class App extends Component {
           <PrivateRoute path="/profile" component={Profile} />
           <Route path="/login" component={LoginWithAuth} />
           <Route path="/registration" component={Registration} />
+          {/* <Route component={<h1>404 Not Found Kek</h1>} /> */}
           <Redirect to="/login" />
         </Switch>
       </>

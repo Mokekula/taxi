@@ -5,12 +5,12 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
-import { store } from "./modules/store";
+import { createAppStore } from "./modules/store";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={store}>
+      <Provider store={createAppStore()}>
         <App />
       </Provider>
     </BrowserRouter>

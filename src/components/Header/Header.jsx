@@ -17,13 +17,13 @@ class Header extends Component {
 
         <nav className="Menu">
           <ul className="Menu__inner">
-            <li className="Map">
-              <Link to="/map" className="Map__btn">
+            <li className="MapPage">
+              <Link to="/map" className="MapPage__btn">
                 Карта
               </Link>
             </li>
-            <li className="Profile">
-              <Link to="/profile" className="Profile__btn">
+            <li className="ProfilePage">
+              <Link to="/profile" className="ProfilePage__btn">
                 Профиль
               </Link>
             </li>

@@ -17,8 +17,8 @@
   justify-content: space-around;
 }
 
-.Map__btn,
-.Profile__btn,
+.MapPage__btn,
+.ProfilePage__btn,
 .Exit__btn {
   display: inline-block;
   padding: 7px 17px;
@@ -37,13 +37,13 @@
   height: 40px;
 }
 
-.Profile__btn,
+.ProfilePage__btn,
 .Exit__btn {
   margin-left: 15px;
 }
 
-.Map__btn:hover,
-.Profile__btn:hover,
+.MapPage__btn:hover,
+.ProfilePage__btn:hover,
 .Exit__btn:hover {
   background-color: #f2f2f2;
   color: #ffc617;
