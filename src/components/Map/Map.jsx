@@ -9,7 +9,7 @@ export const Map = () => {
     "pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA";
 
   useEffect(() => {
-    const map = new mapboxgl.Map({
+    new mapboxgl.Map({
       container: mapContainerRef.current,
       style: "mapbox://styles/mapbox/light-v10",
       center: [36.686439514160156, 49.831975888250405],

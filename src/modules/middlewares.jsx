@@ -1,4 +1,3 @@
-import { connect } from "react-redux";
 import { AUTHENTICATE, logIn } from "./actions";
 import { serverLogin } from "./api";
 

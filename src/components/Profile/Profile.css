@@ -1,11 +1,10 @@
 .Profile {
   padding: 60px 75px 70px;
   background-color: #ffffff;
-  margin: 0 auto;
+  margin: 50px auto;
   border-radius: 4px;
-  margin-top: 50px;
-  width: 795px;
-  height: 437;
+  width: 395px;
+  height: auto;
 }
 
 .Profile__title {
@@ -26,20 +25,9 @@
   margin-bottom: 45px;
 }
 
-.Profile__card-wrap {
-  display: flex;
-  margin-bottom: 45px;
-}
-
-.Profile__card-frontside {
-  margin-right: 32px;
-}
-.Profile__card-frontside,
-.Profile__card-backside {
+.Profile__card-form {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  width: 322px;
-  height: 160px;
   padding: 40px 30px 30px 30px;
 }
 
@@ -61,12 +49,12 @@
   height: 40px;
   padding: 0 5px;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 25px;
 }
 
 .Profile__card-number,
 .Profile__card-name {
   width: 100%;
-  margin-bottom: 25px;
 }
 
 .Profile__card-date,
@@ -113,8 +101,8 @@
 
 .Profile__prompt {
   position: absolute;
-  bottom: 85px;
-  right: 230px;
+  bottom: 115px;
+  right: 420px;
   background: none;
   border: solid 1px #747474;
   outline: none;
@@ -122,4 +110,8 @@
   border-radius: 50%;
   color: #747474;
   font-size: 10px;
+}
+
+#PaymentForm {
+  margin-top: 25px;
 }
