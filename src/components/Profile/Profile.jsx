@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Profile.css";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
-import { cardAdd } from "../../modules/actions";
+import { cardAdd } from "../../actions/profileAction";
 import { connect } from "react-redux";
 
 const Profile = (props) => {

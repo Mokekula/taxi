@@ -2,16 +2,16 @@ import React from "react";
 import { Link, Redirect } from "react-router-dom";
 import "./Login.css";
 import { connect } from "react-redux";
-import { authenticate } from "../../modules/actions";
+import { authenticate } from "../../actions/authAction";
 
 const Login = (props) => {
   const funcAuthenticate = (event) => {
     event.preventDefault();
-    const { username, password } = event.target;
-    if (username.value && password.value) {
-      props.authenticate(username.value, password.value);
+    const { email, password } = event.target;
+    if (email.value && password.value) {
+      props.authenticate(email.value, password.value);
     } else {
-      alert("meow");
+      alert("Write your email and password");
     }
   };
 
@@ -32,15 +32,15 @@ const Login = (props) => {
             </div>
 
             <form className="Login__form" onSubmit={funcAuthenticate}>
-              <div className="Login__username-wrap">
+              <div className="Login__email-wrap">
                 <label htmlFor="Login-name" className="Login__label">
-                  Имя пользователя*
+                  Почта пользователя*
                 </label>
                 <input
                   type="text"
-                  className="Login__username"
+                  className="Login__email"
                   id="Login-name"
-                  name="username"
+                  name="email"
                 />
               </div>
 

@@ -45,7 +45,7 @@
   display: inline-block;
 }
 
-.Login__username,
+.Login__email,
 .Login__pass {
   outline: none;
   border: none;
@@ -59,7 +59,7 @@
   width: 100%;
 }
 
-.Login__username:focus,
+.Login__email:focus,
 .Login__pass:focus {
   border-bottom: solid 2px #1473e6;
 }

@@ -1,4 +1,4 @@
-import { CARD_ADD } from "../modules/actions";
+import { CARD_ADD } from "../actions/profileAction";
 
 const initialState = {
   number: "",

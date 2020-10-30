@@ -1,6 +1,7 @@
-import { LOG_IN, LOG_OUT } from "../modules/actions";
+import { LOG_IN, LOG_OUT } from "../actions/authAction";
 
 const initialState = {
+  // token: localStorage.getItem("token"),
   isLoggedIn: false,
 };
 

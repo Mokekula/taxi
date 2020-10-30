@@ -4,7 +4,7 @@ import { HeaderWithAuth } from "./components/Header/Header";
 import { Map } from "./components/Map/Map";
 import { ProfileWithCard } from "./components/Profile/Profile";
 import { LoginWithAuth } from "./components/Login/Login";
-import { Registration } from "./components/Registration/Registration";
+import { RegistrationWithAuth } from "./components/Registration/Registration";
 import { PrivateRoute } from "./PrivateRoute";
 import { connect } from "react-redux";
 
@@ -19,7 +19,7 @@ export const App = () => {
         <PrivateRoute path="/map" component={Map} />
         <PrivateRoute path="/profile" component={ProfileWithCard} />
         <Route path="/login" component={LoginWithAuth} />
-        <Route path="/registration" component={Registration} />
+        <Route path="/registration" component={RegistrationWithAuth} />
         {/* <Route component={<h1>404 Not Found Kek</h1>} /> */}
         <Redirect to="/login" />
       </Switch>

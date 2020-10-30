@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../img/logo.png";
 import { connect } from "react-redux";
-import { logOut } from "../../modules/actions";
+import { logOut } from "../../actions/authAction";
 
 const Header = (props) => {
   const funcUnauthenticate = () => {
