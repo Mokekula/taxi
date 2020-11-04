@@ -4,6 +4,7 @@ import { loadState, saveState } from "../modules/localStorage";
 import createSagaMiddleware from "redux-saga";
 import { handleAuth } from "../sagas/sagaAuth";
 import { handleRegistr } from "../sagas/sagaRegister";
+import { handleCard } from "../sagas/sagaCard";
 
 export const createAppStore = () => {
   const initialState = loadState();
@@ -22,6 +23,7 @@ export const createAppStore = () => {
 
   sagaMiddleware.run(handleRegistr);
   sagaMiddleware.run(handleAuth);
+  sagaMiddleware.run(handleCard);
 
   store.subscribe(() => {
     saveState(store.getState());

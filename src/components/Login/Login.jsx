@@ -7,6 +7,7 @@ import { authenticate } from "../../actions/authAction";
 const Login = (props) => {
   const funcAuthenticate = (event) => {
     event.preventDefault();
+    console.log(props);
     const { email, password } = event.target;
     if (email.value && password.value) {
       props.authenticate(email.value, password.value);

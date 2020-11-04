@@ -38,4 +38,3 @@ const Header = (props) => {
 };
 
 export const HeaderWithAuth = connect(null, { logOut })(Header);
-// export default Header;

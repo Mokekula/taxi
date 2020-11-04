@@ -106,4 +106,3 @@ export const RegistrationWithAuth = connect(
   }),
   { registration }
 )(Registration);
-// export default Registration;

@@ -1,17 +1,20 @@
 import { LOG_IN, LOG_OUT } from "../actions/authAction";
 
 const initialState = {
-  // token: localStorage.getItem("token"),
+  token: "",
   isLoggedIn: false,
 };
 
 export default function (state = initialState, action) {
   switch (action.type) {
     case LOG_IN: {
-      return { isLoggedIn: true };
+      return {
+        token: action.payload,
+        isLoggedIn: true,
+      };
     }
     case LOG_OUT: {
-      return { isLoggedIn: false };
+      return { token: "", isLoggedIn: false };
     }
     default:
       return state;
