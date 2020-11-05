@@ -31,5 +31,3 @@ export const createAppStore = () => {
 
   return store;
 };
-
-// export const store = createStore(rootReducer, applyMiddleware(authMiddleware));

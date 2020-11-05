@@ -4,7 +4,6 @@ import { serverCard, serverGetCard } from "../apies/apiCard";
 
 function* addCard(action) {
   const successResult = yield call(serverCard, action.payload);
-
   if (successResult) {
     yield put(cardAdd(action.payload));
   } else {

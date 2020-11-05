@@ -6,9 +6,6 @@ import { logIn } from "../actions/authAction";
 function* registration(action) {
   const successResult = yield call(serverRegister, action.payload);
 
-  console.log(successResult);
-  console.log(333);
-
   if (successResult) {
     yield put(logIn(successResult.token));
   } else {

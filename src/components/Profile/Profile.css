@@ -115,3 +115,45 @@
 #PaymentForm {
   margin-top: 25px;
 }
+
+.Profile-success {
+  width: 397px;
+  height: auto;
+  padding: 50px 25px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.Profile-success__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #323232;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.Profile-success__btn {
+  height: 50px;
+  max-width: 200px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #ffc617;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000000;
+  padding: 0;
+  transition: all 0.3s;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Profile-success__btn:hover {
+  color: #1473e6;
+}

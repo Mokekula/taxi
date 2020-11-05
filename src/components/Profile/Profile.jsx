@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const Profile = (props) => {
   const [number, setNumber] = useState(props.number);
-  const [name, setName] = useState(props.name);
   const [expiry, setExpiry] = useState(props.expiry);
+  const [name, setName] = useState(props.name);
   const [cvc, setCvc] = useState(props.cvc);
   const [focus, setFocus] = useState("");
   const [updateCard, setUpdateCard] = useState(false);
@@ -20,12 +20,13 @@ const Profile = (props) => {
 
   const funcCardAdd = (e) => {
     e.preventDefault();
+
     const { number, expiry, name, cvc } = e.target;
 
     props.cardUpdate({
       cardNumber: number.value,
-      cardName: name.value,
       expiryDate: expiry.value,
+      cardName: name.value,
       cvc: cvc.value,
       token: props.token,
     });
@@ -37,6 +38,9 @@ const Profile = (props) => {
     <>
       {updateCard ? (
         <div className="Profile-success">
+          <h2 className="Profile-success__title">
+            Платежные данные обновлены. Теперь вы можете заказать такси.
+          </h2>
           <Link
             to="/map"
             className="Profile-success__btn"
@@ -49,10 +53,10 @@ const Profile = (props) => {
         <div id="PaymentForm">
           <Cards
             number={number}
-            name={name}
             expiry={expiry}
+            name={name}
             cvc={cvc}
-            focus={focus}
+            focused={focus}
           />
           <div className="Container">
             <div className="Profile">
@@ -133,8 +137,8 @@ const Profile = (props) => {
 export const ProfileWithCard = connect(
   (state) => ({
     number: state.card.number,
-    name: state.card.name,
     expiry: state.card.expiry,
+    name: state.card.name,
     cvc: state.card.cvc,
     token: state.auth.token,
     updateCard: state.card.updateCard,
